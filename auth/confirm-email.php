@@ -18,53 +18,6 @@
         if ($result['total'] > 0) 
         {
             require "../config/mailer.php";
-
-            // $otp = rand(100000,999999);
-            // $otp_hash = password_hash($otp,PASSWORD_DEFAULT);
-            // $_SESSION['otp'] = $otp_hash;
-        
-            // require "../vendor/autoload.php";
-        
-            // $developmentMode = false;
-            // $mailer = new PHPMailer($developmentMode);
-            // try {
-            //     // $mailer->SMTPDebug = 2;
-            //     $mailer->isSMTP();
-            //     if ($developmentMode) {
-            //     $mailer->SMTPOptions = [
-            //         'ssl'=> [
-            //         'verify_peer' => false,
-            //         'verify_peer_name' => false,
-            //         'allow_self_signed' => true
-            //         ]
-            //     ];
-            //     }
-            //     $mailer->Host = 'smtp.elasticemail.com';
-            //     $mailer->SMTPAuth = true;
-            //     $mailer->Username = 'omarhemed800@gmail.com';
-            //     $mailer->Password = '551AB595CB530583E42C330F9AD643DB8219';
-            //     // 551AB595CB530583E42C330F9AD643DB8219
-            //     $mailer->SMTPSecure = 'tls';
-            //     $mailer->Port = 2525;
-            //     $mailer->setFrom('omarhemed800@gmail.com', 'Omar Hemed');
-            //     $mailer->addAddress($_POST['email'], $result['username']);
-        
-                // $mailer->isHTML(true);
-                // $mailer->Subject = 'Verify Email To Reset Password';
-                // $mailer->Body = "<p>Dear, " .$result['username']. " </p> 
-                // <h3>Your OTP code is: ".$otp." <br></h3>";
-                // if ($mailer->send())
-                // {
-                //     $mailer->ClearAllRecipients();
-                //     $_SESSION['success'] = "Check your email and <a href='reset-password.php'>verify</a> 
-                //     to reset password";
-                // } else 
-                // {
-                //     $_SESSION['error'] = "Error Sending Otp";
-                // }
-            // } catch (Exception $e) {
-            //     echo "EMAIL SENDING FAILED. INFO: " . $mailer->ErrorInfo;
-            // }
         } 
         else 
         {

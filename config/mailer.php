@@ -26,14 +26,14 @@
             ]
         ];
         }
-        $mailer->Host = 'smtp.elasticemail.com';
+        $mailer->Host = '';
         $mailer->SMTPAuth = true;
-        $mailer->Username = 'omarhemed800@gmail.com';
-        $mailer->Password = '551AB595CB530583E42C330F9AD643DB8219';
+        $mailer->Username = '';
+        $mailer->Password = '';
         // 551AB595CB530583E42C330F9AD643DB8219
         $mailer->SMTPSecure = 'tls';
         $mailer->Port = 2525;
-        $mailer->setFrom('omarhemed800@gmail.com', 'Omar Hemed');
+        $mailer->setFrom('','');
         $mailer->addAddress($_SESSION['mail'], $_SESSION['username']);
         $mailer->isHTML(true);
 
